@@ -13,6 +13,7 @@ class Site(Document):
 class SurfaceObservation(Document):
     site = ReferenceField(Site)
     observation_time = StringField()
+    uploaded_at  = DateTimeField()
     air_temperature = DecimalField()
     dewpoint = DecimalField()
     relative_humidity = DecimalField()
