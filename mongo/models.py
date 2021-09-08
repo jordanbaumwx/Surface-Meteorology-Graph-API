@@ -1,14 +1,14 @@
 from datetime import datetime
 from mongoengine import Document
 from mongoengine.fields import (
-    DateTimeField, ReferenceField, StringField, GeoPointField, DecimalField
+    DateTimeField, ReferenceField, StringField, PointField, DecimalField
 )
 
 class Site(Document):
     meta = {'collection': 'site'}
-    site_id = StringField()
+    site_ID = StringField()
     name = StringField()
-    location = GeoPointField()
+    location = PointField()
 
 class SurfaceObservation(Document):
     site = ReferenceField(Site)

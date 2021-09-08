@@ -1,6 +1,6 @@
 from mongoengine import connect
 
-from models import Site, SurfaceObservation
+from mongo.models import Site, SurfaceObservation
 
 # Mongo DB Connection String
 connect('sample-ok-mesonet', host='mongomock://localhost', alias='default')
