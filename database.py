@@ -71,8 +71,5 @@ def init_db():
 
             )
             surface_ob.save()
-        except:
-            pass
-
-
-
+        except Exception as e:
+            print(e)
