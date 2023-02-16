@@ -19,4 +19,4 @@ Rx==1.6.1
 sentinels==1.0.0
 singledispatch==3.7.0
 six==1.16.0
-Werkzeug==2.0.1
+Werkzeug==2.2.3
